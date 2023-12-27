@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>IP Address Tracker</title>  
+</head>
+
+<body>
+  <div class="header">
+
+    <h2 class="title">IP Address Tracker</h2>
+
+    <div class="ipInput">
+      <form class="form-ipInput" action="">
+        <input class="searchbar" type="text" placeholder="Search for any IP adrress">
+        <button class="black-side">
+          <img class="arrow" src="./images/icon-arrow.svg" alt="arrow">
+        </button>
+      </form>
+    </div>
+
+
+    <div class="infoBar">
+
+      <div class="detail">
+        <h6>IP adrress</h6>
+        <h2 id="IP_adress"></h2>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="detail">
+        <h6>location</h6>
+        <h2 id="location"></h2>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="detail">
+        <h6>timezone</h6>
+        <h2 id="timezone"></h2>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="detail">
+        <h6>ISP</h6>
+        <h2 id="ISP"></h2>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
